@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../css/fontawesome.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/fontawesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script src="https://kit.fontawesome.com/aaec03a1ff.js" crossorigin="anonymous"></script>
         <title>Projet_02</title>
     </head>
     <header>
-        <img src="images/Reservia@3x.png" alt="Logo de Reservia" />
+        <div class="logo">
+        <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia" /></div>
         <nav class="nav">
             <ul>
                 <li class="navigation"><a href="#Hébergements">Hébergements</a></li>
@@ -19,27 +20,69 @@
     </header>
     <body>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
         <form>
+            <div class="rectangle">
             <i class="fas fa-map-marker-alt"></i>
-             <p><input type="text" name="ville" value="Marseille, France"/></p>
+             <p><input type="textarea" name="ville" value="Marseille, France"/></p></div>
         </form>
         <p>Filtres</p>
-        <div class="economique">
-        <i class="fas fa-money-bill-wave"></i>
-        <div class="favorite type" type="button">Economique</button></div>
-        <i class="fas fa-child"></i>
-        <button class="favorite type" type="button">Familial</button>
-        <i class="fas fa-heart"></i>
-        <button class="favorite type" type="button">Romantique</button>
-        <i class="fas fa-dog"></i>
-        <button class="favorite type" type="button">Animaux autorisés</button>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        <div class="Marseille">
+        <div class=filtres>
+            <div class=rectangle></div>
+            <div class="economique">
+            <i class="fas fa-money-bill-wave"></i>
+            <div class="favorite type" type="button">Economique</button></div></div>
+
+            <div class="familial">
+            <i class="fas fa-child"></i>
+            <div class="favorite type" type="button">Familial</button></div></div>
+        
+            <div class="romantique">
+            <i class="fas fa-heart"></i>
+            <div class="favorite type" type="button">Romantique</button></div></div>
+
+            <div class="animaux">
+            <i class="fas fa-dog"></i>
+            <div class="favorite type" type="button">Animaux autorisés</button></div></div>
+            </div>
+        <i class="fas fa-info-circle"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="marseille">
             <p>Hébergements à Marseille</p>
             <div class="cannebiere">
+            <p><strong>Auberge La Cannebière</strong></p>
             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-            <p>Nuit à partir de 25€</p>
+            <p>Nuit à partir de <strong>25 €</strong></p>
             </div>
+
+            <div class="hotelduport">
+            <p><strong>Hôtel du port</strong></p>
+                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                <p>Nuit à partir de 52 <strong>€</strong></p>
+                </div>
+
+            <div class="hotellesmouettes">
+                <p><strong>Hôtel Les mouettes</strong></p>
+            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+            <p>Nuit à partir de 76 <strong>€</strong></p>
+            </div>
+
+            <div class="hoteldelamer">
+                <p><strong>Hôtel de la mer</strong></p>
+                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                <p>Nuit à partir de 46<strong>€</strong></p>
+                </div>
+
+                <div class="aubergelepanier">
+                <p><strong>Auberge Le Panier</strong></p>
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                    <p>Nuit à partir de <strong>23 €</strong></p>
+                    </div>
+
+                <div class="hotelchezamina">
+                    <p><strong>Hôtel Chez Amina</strong></p>
+                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                <p>Nuit à partir de 96 <strong>€</strong></p>
+                </div>
         </div>
     </body>
 </html>
