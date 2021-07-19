@@ -10,15 +10,18 @@ html, body {
     font-family: Raleway; 
     }
     .nav {
+        display: flex;
+        align-content: row; 
+    }
+    .case{
+        display: flex;
+        align-content: row;
         
     }
     .filtres{
-        
-    }
-    #rectangle{
-        width:400px;
-        height:200px;
-        background-color:#069;
+        border : 25px solid;
+        display: flex;
+        align-content: row;
     }
    .marseille {
        display: flex;
@@ -31,7 +34,7 @@ html, body {
 	height: 20%;
    }
    img {
-       width: 50%;
-       height: 50%;
-       border-radius: 15%;
+       width: 100px;
+       height: 100px;
+       border-radius: 15px;
    }
