@@ -1,57 +1,101 @@
 html, body {
     font-family: Raleway; 
-
-    }
-   body {
+}
+body {
     background-color :#fcfcfc; 
     font-family: 'Raleway', sans-serif; 
-    }
-   h1 {
+}
+h1 {
     font-family: 'Raleway', sans-serif; 
-    }
-    ul {
-        list-style-type : none;
-        display: flex;
-        align-content: space-between;
-
-      }
-      li{
-          line-height:20px;
-        display: inline-block;
-        cursor: pointer;
-    }
-    .case {
-        display: flex;
-        align-content: row;
-        
-    }
-    .filtres {
-        border : 25px solid;
-        display: flex;
-        align-content: row;
-    }
-   .section {
-       display: flex;
-       align-content: flex-start;
-       object-fit: cover;
-       background-color: #F1F1F1;
-   }
-    .logo {
+    font-weight: bold;
+}
+ul {
+    list-style-type : none;
+    display: flex;
+    align-content: space-between;
+}
+li{
+    line-height:20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.case {
+    display: flex;
+    align-content: row;
+}
+.filtres {
+    border : 25px solid;
+    display: flex;
+    align-content: row;
+}
+.section {
+    display: flex;
+    align-content: flex-start;
+    object-fit: cover;
+    background-color: #F1F1F1;
+}
+.logo {
     width: 20%;
-	height: 20%;
-   }
-   img {
-       width: 100px;
-       height: 100px;
-       border-radius: 15px;
-   }
-   .navbar{
-       display:flex;
-       color:blue;
-   }
-   .navbar-brand{
-       color:grey;
-   }
+  	height: 20%;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+.navbar{
+    display:flex;
+    color:blue;
+    border-bottom: blue;
+}
+.navbar-brand{
+    color:grey;
+    border-bottom: blue;
+}
 .logo{
     display:flex;
+}
+.score {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.euros{
+    font-weight: 600;
+}
+.rechercher{
+  display : flex;
+  margin-bottom: 30px;
+  background-color: blue;
+}
+  
+.hotelEtoiles {
+    display: inline-block;
+    position: relative;
+    height: 19px;
+}
+  
+.score .stars-active {
+    color: #EEBD01;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+.score .stars-inactive {
+    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: initial;
+    /* overflow: hidden; */
+}
+.blueStar {
+    color:blue;
+}
+.greyStar{
+        color:grey;
 }
