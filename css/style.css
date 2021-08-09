@@ -55,19 +55,24 @@ img {
 .logo{
     display:flex;
 }
-.score {
-    display: block;
-    font-size: 16px;
-    position: relative;
-    overflow: hidden;
+button {
+  background-color: blue;
 }
 .euros{
     font-weight: 600;
 }
 .rechercher{
-  display : flex;
   margin-bottom: 30px;
-  background-color: blue;
+  width: 130px;
+  background-color: #0065FC;
+  border: none;
+  padding: 0;
+  border-radius: 0 15px 15px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex-shrink: 0;
 }
   
 .hotelEtoiles {
@@ -75,27 +80,60 @@ img {
     position: relative;
     height: 19px;
 }
-  
-.score .stars-active {
-    color: #EEBD01;
-    position: relative;
-    z-index: 10;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-.score .stars-inactive {
-    color: grey;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-text-stroke: initial;
-    /* overflow: hidden; */
-}
 .blueStar {
     color:blue;
 }
 .greyStar{
         color:grey;
+}
+button{
+    border-radius: 50px;
+}
+.info{
+    display: flex;
+}
+.nav{
+    margin: 20px;
+}
+.search {
+    font-size: 0;
+    margin-bottom: 30px;
+    height: 50px;
+}
+.icone-search{
+    background-color: grey;
+    padding: 2px;
+    font-size: 16px;
+    margin-bottom:20px;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    flex-shrink: 0;
+}
+.case{
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.filtres{
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+.filtre-id{
+    position: relative;
+    right: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+filtres i{
+        margin: auto;
+        color: #0065FC;
+    }
 }

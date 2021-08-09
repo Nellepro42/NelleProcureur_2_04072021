@@ -17,16 +17,16 @@
         <div class="logo">
             <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia et page d'accueil" />
 
-            <nav class="navbar navbar-expand">
+            <nav class="navigation">
                 <ul>
-                    <li class="nav-item">
+                    <li class="nav">
                         <a class="nav-item active" href="#Hébergements">Hébergements</a>
                     </li>
-                    <li class="navbar-brand">
+                    <li class="nav">
                         <a class="nav-link" href="#Activités">Activités</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">S"inscrire</a>
+                    <li class="nav">
+                        <a href="#">S"inscrire</a>
                     </li>
                 </ul>
             </nav>
@@ -37,40 +37,39 @@
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <h2>En plein centre ville ou en pleine nature</h2>
     <form>
-        <div class="rechercher">
-            <i class="fas fa-map-marker-alt"></i>
-            <p><input type="textarea" name="ville" placeholder="Marseille, France" alt="ville" /></p>
-            <button>Rechercher<i class="fas fa-search"></i>
-        </button>
+        <div class="search">
+            <span class="icone-search">
+                <i class="fas fa-map-marker-alt"></i></span>
+            <input type="searchBar" class="ville" placeholder="Marseille, France" alt="ville" />
+            <button class="rechercher">Rechercher</button>
         </div>
     </form>
     <p>Filtres</p>
     <div class="case">
         <div class="filtres">
-            <div class=rectangle></div>
-            <div class="economique">
+            <div class="filtre-id">
                 <i class="fas fa-money-bill-wave"></i>
-                <div class="favorite type" type="button">Economique</button></div>
+                <span>Economique</span></div>
             </div>
         </div>
         <div class="filtres">
-            <div class="familial">
+            <div class="filtre-id">
                 <i class="fas fa-child"></i>
-                <div class="favorite type" type="button">Familial</button></div>
+                <span>Familial</span></div>
             </div>
         </div>
         <div class="filtres">
-            <div class="romantique">
+            <div class="filtre-id">
                 <i class="fas fa-heart"></i>
-                <div class="favorite type" type="button">Romantique</button></div>
+                <span>Romantique</span></div>
             </div>
         </div>
         <div class="filtres">
-            <div class="animaux">
+            <div class="filtre-id">
                 <i class="fas fa-dog"></i>
-                <div class="favorite type" type="button">Animaux autorisés</button></div>
-            </div>
+                <span>Animaux autorisés</span></div>
         </div>
+    </div>
     </div>
     <div class="info">
         <i class="fas fa-info-circle"></i>
@@ -96,7 +95,7 @@
                 <h3><span class="euros">Hôtel du port</span></h3>
                 <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                     alt="Photo de deux lits simples avec une fenêtre ambiance grise">
-                <p>Nuit à partir de 52 <strong>€</strong></p>
+                <p>Nuit à partir de 52<span class="euros">€</span></p>
                 <div class="hotelEtoiles">
                     <i class="fas fa-star blueStar"></i>
                     <i class="fas fa-star blueStar"></i>
