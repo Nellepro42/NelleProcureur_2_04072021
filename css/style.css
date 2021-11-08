@@ -2,11 +2,12 @@ html {
     font-family: Raleway; 
 }
 body {
-    margin: 0;
+    margin: auto;
     background-color :#fcfcfc; 
     font-family: 'Raleway', sans-serif; 
     box-sizing: border-box;
-    max-width: 1024px;
+    max-width: 1400px;
+    justify-content: space-between;
 }
 
 #main{
@@ -27,6 +28,7 @@ ul {
     padding: 40px 30px 0;
     margin : 0;
 }
+
 #subscribe{
     padding-top: 80px;
 }
@@ -66,11 +68,7 @@ section {
     align-content: flex-start;
     object-fit: cover;
 }
-.logo {
-    width: 20%;
-  	height: 20%;
-      margin-top: 30px;
-}
+
 header{
     justify-content: space-between;
     margin-bottom: 35px;
@@ -82,6 +80,7 @@ img {
 }
 .logo{
     display:flex;
+    height: 100px;
 }
 button {
   background-color: #0065FC;
@@ -101,10 +100,11 @@ button {
   font-size: 1.1rem;
   cursor: pointer;
   flex-shrink: 0;
+  height: 35px;
   
 }
 .ville{
-    height:10%;
+    height: 30px;
 }
 nav li{
     padding-top: 40px;
@@ -131,7 +131,7 @@ button{
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 23px;
+    height: 35px;
     background-color: #F2F2F2;
     border-radius: 14px 0 0 14px;
 }
@@ -290,7 +290,7 @@ a{
     
     .hotelArticle{
         display: grid;
-        height: 23d0px;
+        height: 230px;
         grid-template-rows: 1fr 40%;
         box-sizing: border-box;
         border: 5px solid #fff;
@@ -368,13 +368,14 @@ a{
     
     .activites{
       width: 100vw;
-      max-width: 1024px;
+      max-width: 1400px;
     }
 
     .activitesTab{
         display:flex;
         width: 100%;
         flex-wrap: wrap;
+        justify-content: center;
       }
 
       #activity {
@@ -387,6 +388,7 @@ a{
         display: flex;
         flex-wrap: wrap;
         width: 25%;
+
     }
 
     .activite img {
