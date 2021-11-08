@@ -34,6 +34,8 @@ ul {
 }
 #hebergement{
     color: #0065fc;
+    border-top: 2px solid #0065FC;
+    padding-top: 38px;
 }
 .info .fas {
     color: #0065fc;
