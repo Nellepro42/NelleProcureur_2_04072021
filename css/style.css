@@ -6,6 +6,7 @@ body {
     background-color :#fcfcfc; 
     font-family: 'Raleway', sans-serif; 
     box-sizing: border-box;
+    max-width: 1024px;
 }
 
 #main{
@@ -75,8 +76,8 @@ header{
     margin-bottom: 35px;
 }
 img {
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     border-radius: 15px;
 }
 .logo{
@@ -114,7 +115,6 @@ nav a{
 .hotelEtoiles {
     display: inline-block;
     position: relative;
-    height: 19px;
 }
 
 button{
@@ -231,6 +231,50 @@ a{
         display: flex;
         flex-direction: column;
     }
+
+    .populaire{
+        flex: 1;
+        margin-left: 3%;
+    }
+    .populaireArticle.navigation{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .populaireArticle.navigation img{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-right: 20px;
+        width: 125px;
+        height: 125px;
+    }
+
+    .populaireDescription.navigation{
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .populaireDescription.navigation h3{
+        margin: 0px;
+        padding: 0px;
+    }
+    .populaireDescription.navigation .night{
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .populaireDescription.navigation .hotelEtoiles{
+        display:block;
+        margin-top: auto;
+        margin-bottom:5px;
+    }
     
     .hotels{
         flex: 2;
@@ -246,33 +290,47 @@ a{
     
     .hotelArticle{
         display: grid;
-        height: 220px;
+        height: 23d0px;
         grid-template-rows: 1fr 40%;
         box-sizing: border-box;
         border: 5px solid #fff;
-        border-radius: 15px;
-        overflow: hidden;
+        border-radius: 20px;
         box-shadow: 0 0 7px #c1c1c1;
+        background-color: white;
     }
     
     .hotelArticle img{
         width: 100%;
         height: 126px;
         object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-bottom: 10px;
     }
     
-    .hotelDescription{
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: #fff;
-        padding: 5px 10px;
-    }
-    
-    .hotelDescription p{
-        margin: 0;
-    }
     .descriptionHotel{
         flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .descriptionHotel.navigation p{
+        margin: 0;
+        padding: 0;
+    }
+    .descriptionHotel.navigation h3{
+        margin: 0;
+        padding: 0;
+    }
+    .descriptionHotel.navigation .hotelEtoiles{
+        margin-top:auto;
+    }
+    .descriptionHotel.navigation{
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
     }
     
     .hotelEtoiles{
@@ -292,10 +350,8 @@ a{
         color: #7e7777;
     }
     
-    .populaire{
-        flex: 1;
-        margin-left: 3%;
-    }
+
+
     .hostel{
         margin: 0;
         font-weight: 700;
@@ -310,71 +366,78 @@ a{
         font-size: 15px;
     }
     
-    .activitesTab{
-        display: flex;
-        align-items: stretch;
-        justify-content: stretch;
-        flex-direction: column;
-        padding: 30px 0;
-        border-radius: 8px;
-        margin-bottom: 50px;
-        width: 100%;
-        height: 100%;
-        margin-left: 40px;
-        
-    }
     .activites{
-        display: grid;
-        object-fit: cover;
-        border-radius: 20px;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        grid-template-columns: 1fr;
-        margin-left: 40px;
+      width: 100vw;
+      max-width: 1024px;
     }
-.activite ,#imgOne{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+
+    .activitesTab{
+        display:flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      #activity {
+      }
+
+      .activite {
+        height: 480px;
+        border-radius: 20px;
+        box-shadow: 0 0 7px #c1c1c1;
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+    }
+
+    .activite img {
+        object-fit: cover;
+        width: 100%;
+        max-height: calc(100% - 80px);
+    }
+
+    .activite #imgOne, .activite #imgFour {
+        height: 100%;
+        border-radius: 0px;
+        object-fit: cover;
+    } 
+
+@media (max-width: 500px) {
+    .activite {
+        height: 480px;
+        border-radius: 20px;
+        box-shadow: 0 0 7px #c1c1c1;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .activite img {
+        max-height: calc(100% - 80px);
+        width: 100%;
+        object-fit: cover;
+    }
+}  
+
+.activityDescription{ 
+    height: 80px; 
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+.activite #imgTwo{
+    border-radius: 0px;
+} 
+.activite #imgThree{
+    border-radius: 0px;
 } 
 
-.activite ,#imgTwo{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+.activite #imgFive{
+    border-radius: 0px;
 } 
-.activite ,#imgThree{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-} 
-.activite ,#imgFour{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-} 
-.activite ,#imgFive{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-} 
-.activite ,#imgSix{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+.activite #imgSix{
+    border-radius: 0px;
 } 
     .foot{
         width: 100%;
@@ -430,5 +493,4 @@ footer li{
         font-weight: 600;
         color: #0065FC;
     }
-    
     
