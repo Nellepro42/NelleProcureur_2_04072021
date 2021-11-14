@@ -421,7 +421,7 @@ a{
         object-fit: cover;
     } 
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .activite {
         height: 480px;
         border-radius: 20px;
@@ -436,7 +436,7 @@ a{
         width: 100%;
         object-fit: cover;
     }
-}  
+}   */
 
 .activityDescription{ 
     height: 80px; 
