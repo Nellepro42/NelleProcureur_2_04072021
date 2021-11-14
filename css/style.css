@@ -284,6 +284,7 @@ a{
     .hotels{
         flex: 2;
         margin-left: 40px;
+        flex-direction: column;
     }
     
     .hotelTab{
