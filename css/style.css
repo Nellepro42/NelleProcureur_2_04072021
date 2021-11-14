@@ -400,23 +400,23 @@ a{
       }
 
       .activite {
-        height: 480px;
         border-radius: 20px;
         box-shadow: 0 0 7px #c1c1c1;
         display: flex;
         flex-wrap: wrap;
-        width: 25%;
 
+    }
+    
+    .col1 , .col2{
+        height: 100%;
     }
 
     .activite img {
-        object-fit: cover;
         width: 100%;
         max-height: calc(100% - 80px);
     }
 
     .activite #imgOne, .activite #imgFour {
-        height: 100%;
         border-radius: 0px;
         object-fit: cover;
     } 
