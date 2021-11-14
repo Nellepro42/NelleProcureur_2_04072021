@@ -2,7 +2,7 @@ html {
     font-family: Raleway; 
 }
 body {
-    margin: auto;
+    margin: 0 auto;
     background-color :#fcfcfc; 
     font-family: 'Raleway', sans-serif; 
     box-sizing: border-box;
@@ -241,7 +241,7 @@ a{
     .populaireArticle.navigation{
         display: flex;
         flex-direction: row;
-        margin: 5px;
+        margin: 25px;
         border-radius: 20px;
         padding: 5px;
         background-color: white;
@@ -299,6 +299,7 @@ a{
         border-radius: 20px;
         box-shadow: 0 0 7px #c1c1c1;
         background-color: white;
+        margin: auto;
     }
     
     .hotelArticle img{
@@ -331,6 +332,7 @@ a{
     .descriptionHotel.navigation{
         padding-left: 10px;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         padding-bottom: 10px;
     }
