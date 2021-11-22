@@ -2,7 +2,7 @@ html {
     font-family: Raleway; 
 }
 
-body {
+body { 
     margin: 0 auto;
     background-color :#fcfcfc; 
     font-family: 'Raleway', sans-serif; 
@@ -70,10 +70,6 @@ header{
     margin-bottom: 35px;
 }
 
-.filtres {
-    display: flex;
-    align-content: row;
-}
 section {
     display: flex;
     align-content: flex-start;
@@ -84,6 +80,7 @@ header{
     justify-content: space-between;
     margin-bottom: 35px;
 }
+
 img {
     border-radius: 15px;
 }
@@ -115,9 +112,11 @@ button {
   height: 35px;
   
 }
+
 .ville{
     height: 30px;
 }
+
 nav li{
     padding-top: 40px;
 }
@@ -153,17 +152,16 @@ button{
     background-color: #F2F2F2;
     border-radius: 14px 0 0 14px;
 }
-}
 
 .filtres{
-    justify-content: center;
     align-items: center;
     height: 46px;
     border-left: none;
     margin-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
-}
+}:
+
 .filtreIcone{
     display: flex;
     position: relative;
@@ -177,10 +175,12 @@ button{
     border-left: none;
     color: #0065FC;
 }
+
 .filtreIcone i{
     margin: auto;
     color: #0065FC;
 }
+
 .filtre{
     align-items: center;
     height: 46px;
@@ -230,11 +230,13 @@ nav li a:hover{
 .search h2{
     margin-top: 10px;
 }
+
 .filtre:hover{
     cursor: pointer;
     border-color: #0065FC;
     color: #0065FC;
 }
+
 .popular{
     display: flex;
     align-items: flex-start;
@@ -242,16 +244,19 @@ nav li a:hover{
     margin: 0;
     grid-area: 1 / 1 / 2 / -1;
 }
+
 .hotels, .populaire{
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 40px;
     flex-direction: column;
 }
+
 .populaireDescription{
     display: flex;
     flex-direction: column;
 }
+
 .populaire{
     flex: 1;
     margin-left: 3%;
@@ -264,6 +269,7 @@ nav li a:hover{
     justify-content: space-between;
     align-items: center;
 }
+
 .populaireArticle.navigation{
     display: flex;
     flex-direction: row;
@@ -321,7 +327,7 @@ nav li a:hover{
     
 .hotelArticle{
     display: grid;
-    height: 230px;
+   
     grid-template-rows: 1fr 40%;
     box-sizing: border-box;
     border: 5px solid #fff;
@@ -418,15 +424,15 @@ nav li a:hover{
     box-shadow: 0 0 7px #c1c1c1;
     display: flex;
     flex-wrap: wrap;
+    width: 75%
 }
     
-.col1 , .col2{
-    height: 100%;
+.col1 {
+   // height: 100%;
 }
 
 .activite img {
     width: 100%;
-    max-height: calc(100% - 80px);
 }
 
 .activite #imgOne, .activite #imgFour {
@@ -434,7 +440,7 @@ nav li a:hover{
     object-fit: cover;
 } 
 
-/* @media (max-width: 500px) {
+ @media (max-width: 500px) {
     .activite {
         height: 480px;
         border-radius: 20px;
@@ -449,7 +455,7 @@ nav li a:hover{
         width: 100%;
         object-fit: cover;
     }
-}   */
+}   
 
 .activityDescription{ 
     height: 80px; 
