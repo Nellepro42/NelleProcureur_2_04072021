@@ -8,7 +8,6 @@ body {
     font-family: 'Raleway', sans-serif; 
     box-sizing: border-box;
     max-width: 1400px;
-    justify-content: space-between;
 }
 
 #main{
@@ -160,7 +159,7 @@ button{
     margin-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
-}:
+}
 
 .filtreIcone{
     display: flex;
@@ -173,11 +172,6 @@ button{
     justify-content: center;
     align-items: center;
     border-left: none;
-    color: #0065FC;
-}
-
-.filtreIcone i{
-    margin: auto;
     color: #0065FC;
 }
 
@@ -248,7 +242,7 @@ nav li a:hover{
 .hotels, .populaire{
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px 30px 0px;
     flex-direction: column;
 }
 
@@ -262,6 +256,10 @@ nav li a:hover{
     margin-left: 3%;
 }
 
+.populaires{
+    justify-content: space-between;
+}
+
 .populaire.navigation{
     display: flex;
     flex-direction: row;
@@ -273,10 +271,12 @@ nav li a:hover{
 .populaireArticle.navigation{
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    margin: 0px 0px 50px;
     border-radius: 20px;
     padding: 5px;
     background-color: white;
+    width: 350px;
+    height: 125px;
 }
 
 .populaireArticle.navigation img{
@@ -286,7 +286,6 @@ nav li a:hover{
     border-bottom-right-radius: 0px;
     margin-right: 20px;
     width: 125px;
-    height: 125px;
 }
 
 .populaireDescription.navigation{
@@ -299,6 +298,7 @@ nav li a:hover{
 .populaireDescription.navigation h3{
     margin: 0px;
     padding: 0px;
+    font-size: 1rem;
 }
 
 .populaireDescription.navigation .night{
@@ -327,14 +327,14 @@ nav li a:hover{
     
 .hotelArticle{
     display: grid;
-   
     grid-template-rows: 1fr 40%;
     box-sizing: border-box;
     border: 5px solid #fff;
     border-radius: 20px;
     box-shadow: 0 0 7px #c1c1c1;
     background-color: white;
-    margin: auto;
+    width: 200px;
+    height: 250px;
 }
     
 .hotelArticle img{
@@ -395,7 +395,7 @@ nav li a:hover{
 .hostel{
     margin: 0;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .night{
@@ -424,7 +424,7 @@ nav li a:hover{
     box-shadow: 0 0 7px #c1c1c1;
     display: flex;
     flex-wrap: wrap;
-    width: 75%
+    margin: 20px;
 }
     
 .col1 {
@@ -432,11 +432,13 @@ nav li a:hover{
 }
 
 .activite img {
-    width: 100%;
+    width: 320px;
+    height: 390px;
+    border-radius: 20px 0px 0px 0px;
 }
 
 .activite #imgOne, .activite #imgFour {
-    border-radius: 0px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     height: 475px;
 } 
@@ -460,14 +462,25 @@ nav li a:hover{
 
 .activityDescription{ 
     height: 80px; 
-    margin: 0 auto;
-    align-items: center;
     padding-left: 10px;
 }
 
+.activite #imgTwo{
+    height: 225px;
+    border-radius: 20px 20px 0px 0px;
+}
+.activite #imgThree{
+    height: 150px;
+}
+.activite #imgFive{
+    height: 150px;
+}
 
+.activite #imgSix{
+    height: 220px;
+}
 .activite #imgTwo , #imgThree, #imgFive, #imgSix{
-    border-radius: 0px;
+    border-radius: 20px 20px 0px 0px;
 } 
 
 .foot{
