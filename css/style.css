@@ -34,7 +34,10 @@ ul {
 ul :nth-child(1){
     padding-top: 0;
 }
-
+#afficher {
+    font-weight: 1000;
+    margin: 0px 0px 40px;
+}
 #subscribe{
     padding-top: 80px;
 }
@@ -94,6 +97,9 @@ button {
 
 .euros{
     font-weight: 600;
+}
+i.fas.fa-search{
+    display: none;
 }
 
 .rechercher{
@@ -463,6 +469,7 @@ nav li a:hover{
 .activityDescription{ 
     height: 80px; 
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .activite #imgTwo{
@@ -544,3 +551,7 @@ footer a:hover{
     color: #0065FC;
 }
     
+@media screen and (max-width: 1280px)
+{
+    
+}
