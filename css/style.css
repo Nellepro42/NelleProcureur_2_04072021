@@ -375,7 +375,6 @@ nav li a:hover{
 
 .descriptionHotel.navigation{
     padding-left: 10px;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 10px;
@@ -438,8 +437,8 @@ nav li a:hover{
 }
 
 .activite img {
-    width: 320px;
-    height: 390px;
+    width: 100%;
+    height: 35%;
     border-radius: 20px 0px 0px 0px;
 }
 
@@ -447,34 +446,16 @@ nav li a:hover{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     height: 475px;
-} 
-
- @media (max-width: 500px) {
-    .activite {
-        height: 480px;
-        border-radius: 20px;
-        box-shadow: 0 0 7px #c1c1c1;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .activite img {
-        max-height: calc(100% - 80px);
-        width: 100%;
-        object-fit: cover;
-    }
 }   
 
 .activityDescription{ 
-    height: 80px; 
+    height: 30%; 
     padding-left: 10px;
     font-weight: bold;
 }
 
 .activite #imgTwo{
-    height: 225px;
-    border-radius: 20px 20px 0px 0px;
+    height: 35%;
 }
 .activite #imgThree{
     height: 150px;
@@ -555,3 +536,17 @@ footer a:hover{
 {
     
 }
+@media (max-width: 500px) {
+    .activite {
+        height: 480px;
+        border-radius: 20px;
+        box-shadow: 0 0 7px #c1c1c1;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .activite img {
+        max-height: calc(100% - 80px);
+        width: 100%;
+        object-fit: cover;
