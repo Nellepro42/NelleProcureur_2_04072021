@@ -25,10 +25,10 @@ h2{
 }
 
 ul {
-    list-style-type : none;
+    list-style-type: none;
     display: flex;
-    padding: 40px 30px 0;
-    margin : 0;  
+    padding: 40px 0px 0;
+    margin: 0
 }
 
 ul :nth-child(1){
@@ -50,12 +50,13 @@ ul :nth-child(1){
 }
 .info .fas {
     color: #0065fc;
-    font-size: 16px;
     padding: 7px 11px 7px 11px;
     border: solid 1px #D9D9D9;
     border-radius: 2000px;
     margin-right: 20px;
     margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 a{
@@ -94,9 +95,12 @@ img {
 button {
   background-color: #0065FC;
 }
-
+.logement{
+    margin-top: 40px;
+    margin-bottom: 20px;;
+}
 .euros{
-    font-weight: 600;
+    font-weight: bolder;
 }
 i.fas.fa-search{
     display: none;
@@ -299,6 +303,7 @@ nav li a:hover{
     flex-direction: column;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-top: 10px;
 }
 
 .populaireDescription.navigation h3{
@@ -367,6 +372,7 @@ nav li a:hover{
 .descriptionHotel.navigation h3{
     margin: 0;
     padding: 0;
+    padding-top: 30px;
 }
     
 .descriptionHotel.navigation .hotelEtoiles{
@@ -437,8 +443,7 @@ nav li a:hover{
 }
 
 .activite img {
-    width: 100%;
-    height: 35%;
+    width: 320px;
     border-radius: 20px 0px 0px 0px;
 }
 
@@ -449,23 +454,27 @@ nav li a:hover{
 }   
 
 .activityDescription{ 
-    height: 30%; 
+    height: 80%;
     padding-left: 10px;
     font-weight: bold;
+    padding-inline-start: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .activite #imgTwo{
-    height: 35%;
+    height: 255px;
+    border-radius: 20px 20px 0px 0px;
 }
 .activite #imgThree{
     height: 150px;
 }
-.activite #imgFive{
-    height: 150px;
+.activite #imgFive #imgSix{
+    height: 200px;
 }
 
 .activite #imgSix{
-    height: 220px;
+    height: 200px;
 }
 .activite #imgTwo , #imgThree, #imgFive, #imgSix{
     border-radius: 20px 20px 0px 0px;
