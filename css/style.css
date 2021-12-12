@@ -74,8 +74,6 @@ header{
 }
 
 section {
-    display: flex;
-    align-content: flex-start;
     object-fit: cover;
 }
 
@@ -90,6 +88,7 @@ img {
 .logo{
     display:flex;
     height: 100px;
+    margin-left: 20px;
 }
 
 button {
@@ -108,13 +107,13 @@ i.fas.fa-search{
 
 .rechercher{
   margin-bottom: 30px;
-  width: 130px;
+  width: 15%;
   background-color: #0065FC;
   border: none;
   padding: 0;
   border-radius: 0 15px 15px 0;
   color: #fff;
-  font-weight: 600;
+  font-weight: 1.2em;
   font-size: 1.1rem;
   cursor: pointer;
   flex-shrink: 0;
@@ -156,10 +155,11 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 5%;
     height: 35px;
     background-color: #F2F2F2;
     border-radius: 14px 0 0 14px;
+    margin-left: 20px;
 }
 
 .filtres{
@@ -176,7 +176,7 @@ button{
     position: relative;
     right: 1px;
     height: 50px;
-    width: 50px;
+    width: 45px;
     border-radius: 50%;
     background-color: #DEEBFF;
     justify-content: center;
@@ -229,10 +229,12 @@ nav li a:hover{
     
 .search h1{
     margin-bottom: 10px;
+    margin-left: 20px;
 }
     
 .search h2{
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 .filtre:hover{
@@ -285,7 +287,7 @@ nav li a:hover{
     border-radius: 20px;
     padding: 5px;
     background-color: white;
-    width: 350px;
+    width: 100%;
     height: 125px;
 }
 
@@ -295,7 +297,7 @@ nav li a:hover{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     margin-right: 20px;
-    width: 125px;
+    width: 40%;
 }
 
 .populaireDescription.navigation{
@@ -428,6 +430,7 @@ nav li a:hover{
     display: flex;
     width: 100%;
     flex-direction: row;
+    
 }
 
 .activite {
@@ -436,6 +439,8 @@ nav li a:hover{
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    width: 90%;
+    margin-right: 150px;
 }
     
 .col1 {
@@ -443,7 +448,8 @@ nav li a:hover{
 }
 
 .activite img {
-    width: 320px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 20px 0px 0px 0px;
 }
 
@@ -461,33 +467,38 @@ nav li a:hover{
     padding-top: 10px;
     padding-bottom: 20px;
 }
-
+.activityDescription#imgFour{
+    margin-bottom: 10px;;
+}
 .activite #imgTwo{
-    height: 255px;
+    height: 215px;
     border-radius: 20px 20px 0px 0px;
 }
 .activite #imgThree{
     height: 150px;
 }
-.activite #imgFive #imgSix{
-    height: 200px;
+.activite#imgFive {
+    height: 160px;
 }
 
 .activite #imgSix{
-    height: 200px;
+    height: 160px;
 }
 .activite #imgTwo , #imgThree, #imgFive, #imgSix{
     border-radius: 20px 20px 0px 0px;
 } 
 
 .foot{
-    width: 100%;
+    width: 93%;
     background: #F2F2F2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+h2#Activités{
+    margin-left: 20px;
 
+}
 footer{
     padding: 40px 50px 50px;
     background-color: #f2f2f2;
@@ -541,7 +552,7 @@ footer a:hover{
     color: #0065FC;
 }
     
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1400px)
 {
     
 }
