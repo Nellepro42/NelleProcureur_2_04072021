@@ -127,7 +127,6 @@ nav li{
 
 nav a{
     padding: 40px 30px 0;
-    font-size: 300%;
 }
 
 .hotelEtoiles {
@@ -544,17 +543,19 @@ footer a:hover{
     color: #0065FC;
 }
 
-@media all and (min-width:376px) {
+@media all and (max-width:500px) {
     #hebergement{
         color:black;
         border-top: 0px;
-        font-size: 350%;
     }
 
     #subscribe{
         color: #0065FC;
         font-size: 350%;
         margin-left: auto;
+    }
+    nav a{
+        padding: 40px 30px 0;
     }
     i.fas.fa-search{
         display: inline;
