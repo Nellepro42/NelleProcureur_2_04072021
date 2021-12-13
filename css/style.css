@@ -103,7 +103,7 @@ i.fas.fa-search{
 
 .rechercher{
   margin-bottom: 30px;
-  width: 15%;
+  width: 10%;
   background-color: #0065FC;
   border: none;
   padding: 0;
@@ -416,11 +416,6 @@ nav li a:hover{
     margin: 3px 0 3px 0;
     font-size: 15px;
 }
-    
-.activites{
-    width: 100vw;
-    max-width: 1400px;
-}
 
 .activitesTab{
     display: flex;
@@ -474,11 +469,11 @@ nav li a:hover{
     height: 150px;
 }
 .activite#imgFive {
-    height: 160px;
+    height: 140px;
 }
 
 .activite #imgSix{
-    height: 160px;
+    height: 140px;
 }
 .activite #imgTwo , #imgThree, #imgFive, #imgSix{
     border-radius: 20px 20px 0px 0px;
@@ -543,7 +538,7 @@ footer a:hover{
     color: #0065FC;
 }
 
-@media all and (max-width:500px) {
+@media (max-width:500px) {
     #hebergement{
         color:black;
         border-top: 0px;
