@@ -575,12 +575,12 @@ footer a:hover {
         width: 200px;
         padding-bottom: 25px;
         border-top: 0px;
-    margin-right: 15px;
-    margin-bottom: 38px;
-    font-size: x-large;
-    width: 200px;
-    margin-left: 0px;
-    padding-bottom: 25px;
+        margin-right: 15px;
+        margin-bottom: 38px;
+        font-size: x-large;
+        width: 200px;
+        margin-left: 0px;
+        padding-bottom: 25px;
     }
 
     .searchcontainer.flex {
@@ -588,7 +588,9 @@ footer a:hover {
     }
 
     a img#logo {
-        width: 50%;
+        width: 30%;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     #subscribe {
@@ -675,11 +677,13 @@ footer a:hover {
         justify-content: space-between;
         align-items: baseline;
     }
-    .HebergementHotel.flex{
+
+    .HebergementHotel.flex {
         display: flex;
         flex-direction: column;
-      }
-    .hotels{
+    }
+
+    .hotels {
         width: 100%;
         background-color: white;
         order: 2;
@@ -687,21 +691,33 @@ footer a:hover {
         margin: 0%;
         padding: 0;
     }
-    .hotelTab{
+
+    .hotelTab {
         display: flex;
         flex-direction: column;
     }
-    .hotelArticle{
+
+    .hotelArticle {
         width: 95%;
         height: 210px;
         font-size: 14px;
     }
-    .activites{
+
+    .activites {
         display: grid;
         height: auto;
         margin-bottom: 25px;
         justify-content: normal;
         -moz-margin-start: -60px;
+    }
+
+    .descriptionHotel.flex h3 {
+        margin: 0;
+        padding: 0;
+        padding-top: 0;
+    }
+    .descriptionHotel.flex .hotelEtoiles{
+        margin-top: 0px;
     }
     .hotels, .populaires {
         flex-wrap: wrap;
