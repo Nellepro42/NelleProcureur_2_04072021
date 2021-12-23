@@ -197,6 +197,7 @@ button {
 
 .filtre-id {
     font-weight: bold;
+    margin-top: 200px;
 }
 
 .eco {
@@ -572,19 +573,9 @@ footer a:hover {
         border-bottom: 2px solid #F2F2F2;
         margin-bottom: 38px;
         font-size: x-large;
-        width: 200px;
         padding-bottom: 25px;
-        border-top: 0px;
         margin-right: 15px;
-        margin-bottom: 38px;
-        font-size: x-large;
-        width: 200px;
         margin-left: 0px;
-        padding-bottom: 25px;
-    }
-
-    .searchcontainer.flex {
-        margin-bottom: 75px;
     }
 
     a img#logo {
@@ -596,9 +587,10 @@ footer a:hover {
     #subscribe {
         color: #0065FC;
         font-size: 150%;
-        margin-left: auto;
-        position: ABSOLUTE;
+        margin-left: -50px;
+        position: absolute;
         top: -50px;
+        margin-top: 20px;
     }
 
     nav a {
@@ -650,20 +642,31 @@ footer a:hover {
     .mot {
         display: none;
     }
+    nav li a:before {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom: solid 3px var(--grey);
+        margin-left:0px;
+        padding-top:15px;
+    }
 
     nav li a:hover {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
         padding-top: 38px;
         border-top: 0px;
-    }
+        border-bottom: 20px;
 
+    }
+    
     .iconeInfo {
-        margin-top: 100px;
+        margin-top: 215px;
     }
 
     .logement {
-        margin-top: 135px;
+        margin-top: 250px;
     }
 
     .hotels, .populaire {
@@ -711,14 +714,30 @@ footer a:hover {
         -moz-margin-start: -60px;
     }
 
+    .activitesTab {
+        display: grid;
+        height: auto;
+        margin-bottom: 25px;
+        justify-content: normal;
+        -moz-margin-start: -60px;
+    }
+
+    .activitecolumn {
+        margin-bottom: 30%;
+        height: 70px;
+        -moz-margin-start: 62px;
+    }
+
     .descriptionHotel.flex h3 {
         margin: 0;
         padding: 0;
         padding-top: 0;
     }
-    .descriptionHotel.flex .hotelEtoiles{
+
+    .descriptionHotel.flex .hotelEtoiles {
         margin-top: 0px;
     }
+
     .hotels, .populaires {
         flex-wrap: wrap;
         flex-direction: row;
@@ -730,4 +749,60 @@ footer a:hover {
     .footer-blocs {
         flex-direction: column;
     }
-}
+
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        .search {
+            margin-bottom: 15px;
+        }
+
+        .searchcontainer.flex {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 5px;
+        }
+
+        .eco {
+            font-size: 12px;
+        }
+
+        .logement {
+            align-items: center;
+            position: relative;
+        }
+
+        .HebergementHotel.flex {
+            margin: 25px 0 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Hébergements {
+            text-align: center;
+            padding-bottom: 5px;
+        }
+
+        .hotels {
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            /*centré dans l'élément parent*/
+            margin-bottom: 20px;
+            border-radius: 0;
+        }
+
+        .populaire {
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+        }
+
+        @media screen and (max-width: 360px) {
+            .activite img {
+                min-width: 80px;
+                max-width: 80px;
+            }
+        }
