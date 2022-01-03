@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    margin: 0 auto;
     background-color: #fcfcfc;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -143,10 +142,6 @@ button {
     border-radius: 50px;
 }
 
-.info {
-    display: flex;
-}
-
 .flex {
     display: flex;
     padding-top: 0;
@@ -266,6 +261,7 @@ nav li a:hover {
 .populaire {
     flex: 1;
     margin-left: 3%;
+    width: 63%;
 }
 
 .populaires {
@@ -278,6 +274,7 @@ nav li a:hover {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+    width: 57%;
 }
 
 .populaireArticle.flex {
@@ -569,28 +566,14 @@ footer a:hover {
     #hebergement {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
-        border-top: 0px;
-        margin-right: 15px;
-        margin-bottom: 0px;
-        font-size: x-large;
-        width: 200px;
-        padding-bottom: 30px;
-        display: block;
+        font-size: large;
 
     }
 
     .flex {
         display: flex;
     }
-
-    #activites {
-        border-bottom: 2px solid #F2F2F2;
-        margin-bottom: 38px;
-        font-size: x-large;
-        padding-bottom: 25px;
-        display: block;
-    }
-
+ 
     a img#logo {
         width: 30%;
         margin-left: 20px;
@@ -712,17 +695,19 @@ footer a:hover {
     }
 
     .hotelArticle {
-        width: 95%;
+        width: 68%;
         height: 210px;
         font-size: 14px;
     }
 
-    .activites {
-        display: grid;
-        height: auto;
-        margin-bottom: 25px;
-        justify-content: normal;
-        -moz-margin-start: -60px;
+    #activites {
+        font-size: large;
+
+    }
+
+    .Hébergements {
+        text-align: center;
+        padding-bottom: 5px;
     }
 
     .activitesTab {
@@ -763,7 +748,7 @@ footer a:hover {
         display: flex;
         flex-wrap: wrap;
         margin: 20px 0px 20px 20px;
-        width: 90%;
+        width: 150%;
     }
 
     .activite #imgOne, .activite #imgFour {
@@ -799,6 +784,7 @@ footer a:hover {
 
     .foot {
         padding: 0px;
+        width: 73%;
     }
 
     .valide {
@@ -806,6 +792,14 @@ footer a:hover {
         width: 88px;
         height: 31px;
         margin-left: 50px;
+    }
+}
+
+@media (min-width: 991.98) and (max-width: 1399.98) {
+    #subscribe {
+        right: -30px;
+        position: absolute;
+        top: 31px;
     }
 }
 
@@ -835,9 +829,10 @@ footer a:hover {
         flex-direction: column;
     }
 
-    .Hébergements {
-        text-align: center;
-        padding-bottom: 5px;
+    #hebergement {
+        color: #0065FC;
+        font-size: large;
+
     }
 
     .hotels {
@@ -870,9 +865,66 @@ footer a:hover {
 }
 
 @media screen and (max-width: 360px) {
-    .activite img {
-       
+    #subscribe {
+        color: #0065FC;
+        /* font-size: 150%; */
+        right: 80px;
+        position: absolute;
+        top: 38px;
+        font-size: large;
     }
+
+    #subscribe {
+        color: #0065FC;
+        right: 80px;
+        position: absolute;
+        top: 38px;
+        font-size: large;
+    }
+
+    .search {
+        width: 0px;
+    }
+
+    .iconeInfo {
+        margin-top: 187px;
+    }
+
+    .logement {
+        margin-top: 191px;
+    }
+
+    #Hébergements {
+        width: 0;
+    }
+
+    .populaire {
+        width: 69%;
+    }
+
+    .hotels, .populaire {
+        padding: 30px 20px 0px 5px;
+
+    }
+
+    .searchcontainer.flex {
+        width: 79%;
+    }
+
+    .activite {
+        border-radius: 20px;
+        box-shadow: 0 0 7px #c1c1c1;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0px 20px 20px;
+        width: 135%;
+    }
+
+    .foot {
+        padding: 0px;
+        width: 79%;
+    }
+
     #subscribe {
         color: #0065FC;
         font-size: 150%;
