@@ -165,7 +165,7 @@ nav a:hover {
     }
 
     nav li:hover {
-        border-top: 2px solid #0065FC;
+        border-top: none;
     }
 
     nav a:hover {
@@ -285,7 +285,7 @@ i.fas.fa-search {
     justify-content: center;
 }
 
-.search .filters i:hover {
+.search .filters li:hover i {
     background-color: #0065FC;
     color: #DEEBFF;
 }
@@ -542,7 +542,7 @@ ul.activity-block:last-child {
 }
 
 
- ul.activity-block div {
+ul.activity-block div {
     display: flex;
     align-items: center;
     height: 60px;
@@ -602,7 +602,7 @@ ul.activity-block img {
         display: block;
     }
 
-   ul.activity-block #imgOne,
+    ul.activity-block #imgOne,
     ul.activity-block #imgTwo,
     ul.activity-block #imgThree,
     ul.activity-block #imgFour,
@@ -610,13 +610,15 @@ ul.activity-block img {
     ul.activity-block #imgSix {
         height: 150px;
     }
+
     ul.activity-block:first-child {
         padding: 0;
     }
-    
+
     ul.activity-block:last-child {
         padding: 0;
     }
+
     .activity-area h3 {
         padding: 10px;
     }
