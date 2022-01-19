@@ -401,7 +401,7 @@ section.hotels article img {
     color: #F2F2F2;
 }
 
-section.hotels a {
+section.hotels .afficherplus {
     font-weight: bold;
     width: 100%;
     margin: 20px;
@@ -507,7 +507,7 @@ aside article h3 {
     margin: 20px;
 }
 
-.activity-list {
+div.activity-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -548,7 +548,7 @@ ul.activity-block:last-child {
     height: 60px;
 }
 
-.activity-block img {
+ul.activity-block img {
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
@@ -595,22 +595,28 @@ ul.activity-block:last-child {
 }
 
 @media (max-width: 480px) {
-    .activity-block {
+    ul.activity-block {
         min-width: 320px;
         width: 100%;
         padding: 0;
         display: block;
     }
 
-    .activity-block #imgOne,
-    .activity-block #imgTwo,
-    .activity-block #imgThree,
-    .activity-block #imgFour,
-    .activity-block #imgFive,
-    .activity-block #imgSix {
+   ul.activity-block #imgOne,
+    ul.activity-block #imgTwo,
+    ul.activity-block #imgThree,
+    ul.activity-block #imgFour,
+    ul.activity-block #imgFive,
+    ul.activity-block #imgSix {
         height: 150px;
     }
-
+    ul.activity-block:first-child {
+        padding: 0;
+    }
+    
+    ul.activity-block:last-child {
+        padding: 0;
+    }
     .activity-area h3 {
         padding: 10px;
     }
